@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container-1">
+    <div class="box-1">
+        <h3>Box 1</h3>
+        <p>The bus will cross 18 countries over a period of 70 days,
+            with passengers hopping off to marvel at the pagodas of Myanmar,
+            hike the Great Wall of China and wander historic cities including Moscow and Prague.
+            The image above is an illustration from Adventures Overland,
+            depicting what the bus might look like.</p>
+    </div>
+    <div class="box-2">
+        <h3>Box 2</h3>
+        <p>The bus will cross 18 countries over a period of 70 days,
+            with passengers hopping off to marvel at the pagodas of Myanmar,
+            hike the Great Wall of China and wander historic cities including Moscow and Prague.
+            The image above is an illustration from Adventures Overland,
+            depicting what the bus might look like.</p>
+    </div>
+    <div class="box-3">
+        <h3>Box 3</h3>
+        <p>The bus will cross 18 countries over a period of 70 days,
+            with passengers hopping off to marvel at the pagodas of Myanmar,
+            hike the Great Wall of China and wander historic cities including Moscow and Prague.
+            The image above is an illustration from Adventures Overland,
+            depicting what the bus might look like.</p>
+    </div>
+</div>
+<div class="container-2">
+    <div class="box">
+        <h3>Box 1</h3>
+        <p>The bus will cross 18 countries over a period of 70 days,
+            with passengers hopping off to marvel at the pagodas of Myanmar,
+            hike the Great Wall of China and wander historic cities including Moscow and Prague.
+            The image above is an illustration from Adventures Overland,
+            depicting what the bus might look like.</p>
+    </div>
+    <div class="box">
+        <h3>Box 2</h3>
+        <p>The bus will cross 18 countries over a period of 70 days,
+            with passengers hopping off to marvel at the pagodas of Myanmar,
+            hike the Great Wall of China and wander historic cities including Moscow and Prague.
+            The image above is an illustration from Adventures Overland,
+            depicting what the bus might look like.</p>
+    </div>
+    <div class="box">
+        <h3>Box 3</h3>
+        <p>The bus will cross 18 countries over a period of 70 days,
+            with passengers hopping off to marvel at the pagodas of Myanmar,
+            hike the Great Wall of China and wander historic cities including Moscow and Prague.
+            The image above is an illustration from Adventures Overland,
+            depicting what the bus might look like.</p>
+    </div>
+</div>
+</body>
+</html>
+
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    @media (min-width: 500px) {
+        .container-1, .container-2 {
+            display: flex;
+            align-items: stretch;
+            flex-direction: row;
+        }
+    }
+
+    .container-2 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .container-1 div, .container-2 div {
+        padding: 10px;
+        border: 1px solid silver;
+    }
+
+    .box-1 {
+        flex: 2;
+        order: 2;
+    }
+
+    .box-2 {
+        flex: 2;
+        order: 1;
+    }
+
+    .box-3 {
+        flex: 1;
+        order: 3;
+    }
+    .box {
+        flex-basis: 20%;
+    }
+</style>
